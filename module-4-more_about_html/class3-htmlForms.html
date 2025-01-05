@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class # | HTML FORM</title>
+    <style>
+      label {
+        display: block;
+        margin-block: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Please Fill Up The Form</h1>
+    <form action="">
+      <label for="firstname"
+        >First Name:
+        <input
+          type="text"
+          name="firstname"
+          id="firstname"
+          placeholder="Your firstname"
+      /></label>
+
+      <label for="lastname"
+        >LastName Name:
+        <input
+          type="text"
+          name="lastname"
+          id="lastname"
+          placeholder="Your lastname"
+      /></label>
+
+      <fieldset>
+        <legend>Pick One from the following</legend>
+        <label for="chitoi">
+          <input type="radio" name="pitha" id="chitoi" /> Chitoi
+        </label>
+        <label for="vapa">
+          <input type="radio" name="pitha" id="vapa" /> Vapa
+        </label>
+        <label for="puri">
+          <input type="radio" name="pitha" id="puri" /> Puri
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Pick one vorta from the following</legend>
+        <label for="sorisha">
+          <input type="checkbox" name="vorta" id="shorisha" /> Shorisha
+        </label>
+        <label for="begun">
+          <input type="checkbox" name="vorta" id="begun" /> Begun
+        </label>
+        <label for="chili">
+          <input type="checkbox" name="vorta" id="chili" /> Chili
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Special instructions</legend>
+        <textarea name="" id="" cols="30" rows="3"></textarea>
+      </fieldset>
+
+      <input type="reset" value="Reset" />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
