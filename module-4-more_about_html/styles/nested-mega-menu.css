@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  margin-top: 3rem;
+}
+
+.nav-ul {
+  list-style: none;
+  display: flex;
+}
+
+.nav-ul {
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+.nav-ul a {
+  display: inline-block;
+  text-decoration: none;
+  font-family: "Outfit";
+  font-size: 1.3rem;
+  color: rgb(201, 41, 201);
+  padding: 0.5rem 0.7rem;
+  background-color: rgb(160, 176, 190);
+  border: 1px solid rgb(126, 70, 70);
+}
+
+.nav-ul a:hover {
+  background-color: aqua;
+}
+
+.foods-link {
+  display: none;
+  background-color: aquamarine;
+}
+
+#foods:hover .foods-link {
+  display: block;
+  color: black;
+}
