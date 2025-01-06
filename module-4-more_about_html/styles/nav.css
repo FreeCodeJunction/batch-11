@@ -1,0 +1,24 @@
+nav > ul {
+  display: flex;
+  list-style: none;
+}
+
+nav > ul > li {
+  margin-right: 10px;
+  padding: 5px;
+}
+
+nav > ul > li > a {
+  text-decoration: none;
+  color: black;
+}
+
+nav a:visited {
+  text-decoration: none;
+  color: red;
+}
+
+nav a:hover {
+  color: lightgray;
+  cursor: pointer;
+}
