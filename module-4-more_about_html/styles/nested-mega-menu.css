@@ -1,45 +1,51 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
-nav {
-  margin-top: 3rem;
-}
-
-.nav-ul {
+.main-nav,
+.foods > ul {
   list-style: none;
-  display: flex;
 }
 
-.nav-ul {
-  flex-flow: row nowrap;
+.main-nav {
+  display: flex;
   justify-content: center;
 }
 
-.nav-ul a {
-  display: inline-block;
-  text-decoration: none;
-  font-family: "Outfit";
-  font-size: 1.3rem;
-  color: rgb(201, 41, 201);
-  padding: 0.5rem 0.7rem;
-  background-color: rgb(160, 176, 190);
-  border: 1px solid rgb(126, 70, 70);
-}
-
-.nav-ul a:hover {
+.main-nav > li {
+  font: 1.3rem "Outfit";
   background-color: aqua;
+  border: 1px solid black;
+  position: relative;
+  display: inline-block;
 }
 
-.foods-link {
+.main-nav a,
+.foods > ul a {
+  text-decoration: none;
+  padding: 0.5rem 0.7rem;
+  display: inline-block;
+}
+
+.main-nav > li:hover > a {
+  background-color: greenyellow;
+  color: red;
+}
+
+.foods > ul {
   display: none;
-  background-color: aquamarine;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  flex-flow: column nowrap;
+  gap: 1rem;
 }
 
-#foods:hover .foods-link {
+.foods li {
+  font: 1.3rem "Outfit";
+  background-color: rgb(221, 241, 40);
+  border: 1px solid black;
+  position: relative;
+}
+
+.foods:hover ul {
   display: block;
-  color: black;
 }
