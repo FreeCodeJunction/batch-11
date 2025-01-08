@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+
+:root {
+  --font-primary: "Inter", serif;
+  --font-secondary: "Merriweather", serif;
+
+  /* * colors */
+  --pure-white: #ffffff;
+  --clr-red: #ff0000;
+  --clr-halkablack: #070211;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  padding: 50px 300px 0px;
+}
+
+/* * hero section */
+
+.hero {
+  font-family: var(--font-secondary);
+  color: var(--pure-white);
+  background: linear-gradient(0deg, rgba(7, 2, 17, 0), rgba(7, 2, 17, 1)),
+    url("../images/Banner\ Image.png") center no-repeat;
+  padding: 177px 344px;
+  border-radius: 1rem;
+}
+
+.hero > h3,
+.hero > h1 {
+  text-align: center;
+}
+
+.hero > .title {
+  font-size: 72px;
+  font-weight: 900;
+}
+
+.hero > .subtitle {
+  font-size: 32px;
+  font-weight: normal;
+}
+
+/* * discount section */
+
+.discount {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 0;
+  font-family: var(--font-primary);
+}
+
+.discount > .title {
+  font-size: 88px;
+  font-weight: 700;
+  color: var(--clr-red);
+  margin-bottom: 49px;
+}
+
+.discount > .subtitle {
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--clr-red);
+  margin-bottom: 16px;
+}
+
+.discount > .about {
+  font-size: 48px;
+  font-weight: bold;
+  color: var(--clr-halkablack);
+  margin-bottom: 49px;
+}
+
+.discount > img {
+  display: block;
+  object-fit: contain;
+}
+
+/* * welcome section  */
+
+.welcome {
+  font-family: var(--font-primary);
+  padding: 126px 0 142px 126px;
+  color: var(--pure-white);
+  background: linear-gradient(90deg, rgba(7, 2, 17, 1), rgba(7, 2, 17, 0)),
+    url("../images/Group\ 70.png") 862px center no-repeat,
+    url("../images/Vectorrr.png") center no-repeat;
+  border-radius: 1rem;
+}
+
+.welcome > .title {
+  font-weight: 900;
+  max-width: 642px;
+  line-height: 88px;
+  letter-spacing: 111%;
+  font: 64px var(--font-secondary);
+  margin-bottom: 24px;
+}
+
+.welcome > .description {
+  font-size: 18px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 30px;
+  max-width: 697px;
+  margin-bottom: 48px;
+}
+
+.welcome > .simple-btn {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--pure-white);
+  font-family: inherit;
+  background: none;
+  border: none;
+  text-transform: uppercase;
+  margin-left: 32px;
+}
+
+/* * address section */
+
+.address {
+  margin-block: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, rgba(255, 0, 0, 0.1), rgba(255, 0, 0, 0));
+  border-radius: 1rem;
+  font-family: var(--font-primary);
+  padding-block: 100px 110px;
+}
+
+.address > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 48px;
+}
+
+.address p {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 56px;
+}
+
+.address span {
+  color: #ff0000;
+}
+
+.address > button {
+  background-color: #ff0000;
+  border: none;
+  padding: 16px 32px;
+  font-weight: 800;
+  font-family: inherit;
+  font-size: 20px;
+  text-transform: uppercase;
+  border-radius: 8px;
+  color: var(--pure-white);
+}
