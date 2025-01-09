@@ -10,10 +10,16 @@
   --clr-halkablack: #070211;
 }
 
+/* * changing default styles */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+img {
+  display: block;
 }
 
 html {
@@ -22,6 +28,35 @@ html {
 
 body {
   padding: 50px 300px 0px;
+}
+
+/* * common description */
+.common-description {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  color: rgba(7, 2, 17, 0.6);
+}
+
+/* * common subtitle  */
+.common-subtitle {
+  font-weight: 500;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+/* ! red button */
+
+.red-button {
+  background-color: #ff0000;
+  border: none;
+  padding: 16px 32px;
+  font-weight: 800;
+  font-family: var(--font-primary);
+  font-size: 20px;
+  border-radius: 8px;
+  color: var(--pure-white);
+  cursor: pointer;
 }
 
 /* * hero section */
@@ -68,9 +103,7 @@ body {
   margin-bottom: 49px;
 }
 
-.discount > .subtitle {
-  font-size: 24px;
-  font-weight: 500;
+.discount > .common-subtitle {
   color: var(--clr-red);
   margin-bottom: 16px;
 }
@@ -126,6 +159,7 @@ body {
   border: none;
   text-transform: uppercase;
   margin-left: 32px;
+  cursor: pointer;
 }
 
 /* * address section */
@@ -159,14 +193,224 @@ body {
   color: #ff0000;
 }
 
-.address > button {
-  background-color: #ff0000;
-  border: none;
-  padding: 16px 32px;
-  font-weight: 800;
-  font-family: inherit;
-  font-size: 20px;
+.address > .red-button {
   text-transform: uppercase;
-  border-radius: 8px;
-  color: var(--pure-white);
+}
+
+/* * happy new year section */
+
+.happy-new-year {
+  font-family: var(--font-primary);
+  display: flex;
+  justify-content: center;
+  margin-block: 120px;
+}
+
+/* * first-section */
+
+.happy-new-year > .first-section {
+  max-width: 393px;
+  margin-right: 70px;
+}
+
+.happy-new-year > .first-section > .common-subtitle {
+  color: var(--clr-red);
+  margin-bottom: 16px;
+}
+
+.happy-new-year > .first-section > .title {
+  font-family: var(--font-secondary);
+  font-size: 48px;
+  font-weight: 900;
+  color: #070211;
+  margin-bottom: 22px;
+}
+
+/* * second section */
+
+.happy-new-year > .second-section {
+  border: 15px solid var(--clr-red);
+  border-radius: 999px;
+  padding: 2rem;
+}
+
+/* * third section */
+
+.happy-new-year > .last-section {
+  margin-left: 118px;
+  align-self: flex-end;
+}
+
+.happy-new-year > .last-section > .title {
+  font-weight: 800;
+  color: var(--clr-red);
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.happy-new-year > .last-section > .common-description {
+  margin-bottom: 43px;
+}
+
+/* * holidays sale */
+
+.holidays-sale {
+  font-family: var(--font-primary);
+  text-align: center;
+}
+
+.holidays-sale > .common-subtitle {
+  margin-bottom: 16px;
+}
+
+.holidays-sale > .title {
+  font-size: 72px;
+  font-family: var(--font-secondary);
+  font-weight: 900;
+  color: #070211;
+  margin-bottom: 28px;
+}
+
+.holidays-sale > .title > span {
+  color: var(--clr-red);
+}
+
+.holidays-sale .common-description {
+  max-width: 1068px;
+  line-height: 32px;
+  text-align: center;
+  margin-bottom: 64px;
+  margin-inline: auto;
+}
+
+/* * editing the holidays sale image section */
+.holidays-sale > .box-image {
+  min-height: 662px;
+  display: flex;
+  align-items: flex-end;
+  background: url("../images/Group\ 75.png") no-repeat 60px top,
+    url("../images/Group\ 44.png") no-repeat 974px 77px;
+}
+
+.holidays-sale > .box-image > div {
+  height: 229px;
+  background-color: #ff0000;
+  border-radius: 1rem;
+  width: 100%;
+  z-index: -2;
+}
+
+/* * Gallery Section styling */
+.gallery-section {
+  font-family: var(--font-primary);
+  margin-block: 120px;
+}
+
+.gallery-section > .common-subtitle {
+  margin-bottom: 16px;
+  color: #ff0000;
+}
+
+.gallery-section > .title {
+  font-family: var(--font-secondary);
+  font-size: 48px;
+  font-weight: 900;
+  color: #070211;
+  margin-bottom: 22px;
+}
+
+.gallery-section > .common-description {
+  max-width: 896px;
+  margin-bottom: 48px;
+}
+
+/* * gallery image section */
+
+.gallery {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 12px;
+}
+
+/* * news letter section */
+
+.newsletter {
+  text-align: center;
+  background-color: rgba(255, 0, 0, 0.05);
+  margin-top: 120px;
+  padding-block: 80px;
+}
+
+.newsletter > img {
+  margin-inline: auto;
+  margin-bottom: 40px;
+}
+
+.newsletter > .title {
+  font: 900 48px var(--font-secondary);
+  margin-bottom: 22px;
+}
+
+.newsletter > .common-description {
+  margin: 0 auto 48px;
+  max-width: 896px;
+}
+
+.newsletter > .visitor-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.newsletter > .visitor-form > #visitor-email {
+  padding: 18px 32px;
+  font-size: 18px;
+  border: none;
+  border-radius: 50px 0 0 50px;
+}
+
+.newsletter .visitor-form .red-button {
+  font-weight: 700;
+  border-radius: 0 50px 50px 0;
+}
+
+/* * footer section */
+footer {
+  padding: 120px 140px;
+  background-color: black;
+  color: white;
+  font: 400 24px var(--font-primary);
+  line-height: 40px;
+}
+
+footer > .footer-address {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 49px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+footer > .footer-address .contact-info > div {
+  display: flex;
+  gap: 8px;
+}
+
+footer > .footer-address .contact-info > div > img {
+  object-fit: contain;
+}
+
+footer > .social-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  padding: 48px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 50px;
 }
