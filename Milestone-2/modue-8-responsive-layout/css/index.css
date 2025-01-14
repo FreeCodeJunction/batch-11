@@ -1,0 +1,47 @@
+:root {
+  --background-test: green;
+  --fallback-background-test: green;
+  --main-font-size: yellow;
+  --fallback-font-size: 5rem;
+  --main-background-color: var(--background-test);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.5rem;
+  font-size: clamp(1.5rem, 1.2rem + 1.5vw, 3rem);
+}
+
+.img-container {
+  --bg-image-container: red;
+  background-color: var(--main-background-color, blue);
+}
+
+.img-container__title {
+  --bg-image-container: green;
+  --background-test: aquamarine;
+  background-color: var(--background-test);
+  font-size: var(--main-font-size, 10rem);
+}
+
+.section {
+  height: 100px;
+  width: 100px;
+  background-color: var(--background-test);
+  border: 1px solid black;
+}
+.img-container__img {
+  max-width: 100%;
+  height: auto;
+}
+/* 
+h2 {
+  font-size: 1.5rem;
+  font-size: clamp(1.5rem, 1.2rem + 1.5vw, 3rem);
+} */

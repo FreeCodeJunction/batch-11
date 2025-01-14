@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Css Responsive Layout</title>
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <h1>This Heading is responsive to The multiple screen sizesS</h1>
+    <section class="img-container">
+      <picture>
+        <source
+          media="(min-width: 40rem)"
+          srcset="images/cat-desktop.jpg"
+          width="3296"
+          height="2886"
+        />
+        <img
+          class="img-container__img"
+          src="images/cat-mobile.jpg"
+          height="5012"
+          width="6037"
+          alt="cat-image"
+        />
+      </picture>
+
+      <h2 class="img-container__title">
+        This is a minimal example of responsive images.This example shows how to
+        make a images responsive in different screen sizes . And also shows how
+        to use an picture element to achieve this
+      </h2>
+      <div class="section"></div>
+    </section>
+  </body>
+</html>

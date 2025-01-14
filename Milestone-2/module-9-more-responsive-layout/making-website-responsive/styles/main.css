@@ -1,0 +1,417 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", "sans-serif", serif;
+}
+
+/* common styles */
+
+.section-title {
+  font-size: 45px;
+  font-weight: 700;
+  color: #181818;
+  text-align: center;
+}
+
+.secondary-bg {
+  background: #fff8f3;
+}
+
+.section-description {
+  font-size: 18px;
+  line-height: 30px;
+  color: #757575;
+  text-align: center;
+}
+
+.text-primary {
+  color: #fd6e0a;
+}
+
+.dark-two {
+  color: #474747;
+}
+
+.btn-primary {
+  background: #fd6e0a;
+  color: white;
+  padding: 19px 35px;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 20px;
+  border: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* nav styles */
+
+.header {
+  background-image: url("../images/developer.png"),
+    url("../images/header_bg.png");
+  background-repeat: no-repeat;
+  background-position: 4rem 1rem, bottom right;
+  padding-top: 51px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-inline: 276px;
+}
+
+.nav-title {
+  font-size: 45px;
+  font-weight: 800;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav li a {
+  text-decoration: none;
+  font-size: 20px;
+}
+/* banner section styles */
+.banner {
+  display: flex;
+  justify-content: space-between;
+  margin: 47px 35px 0 276px;
+}
+
+.banner-content {
+  max-width: 585px;
+  margin-block-start: 136px;
+}
+
+.banner-grettings {
+  font-size: 45px;
+  font-weight: 600;
+}
+.banner-title {
+  font-weight: 700;
+  font-size: 85px;
+  color: #181818;
+}
+
+.banner-description {
+  font-size: 18px;
+  line-height: 30px;
+  margin-block: 20px 30px;
+}
+
+.contact-btn {
+  background: transparent;
+  border: 2px solid #fd6e0a;
+  color: #fd6e0a;
+}
+
+.banner-img {
+  width: 580px;
+}
+
+main {
+  margin: 170px 220px;
+}
+
+/* about section styling */
+
+.about {
+  padding: 170px 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.about-info-section {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.about-info-section > .about-info-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.about-info-section > .about-info-item > h3 {
+  color: #757575;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.about-info-section > .about-info-item > p {
+  font-weight: 700;
+  font-size: 20px;
+  white-space: nowrap;
+}
+
+/* * what i do section */
+
+.what-i-do {
+  padding: 170px 200px;
+}
+
+.what-i-do > .section-title {
+  margin-bottom: 30px;
+}
+
+.my-skills {
+  display: flex;
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+.my-skills > .single-skill {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: white;
+  padding: 1.3rem 2rem;
+  box-shadow: 0 6px 50px rgba(0, 0, 0, 0.06);
+  border-radius: 5px;
+}
+
+.my-skills .skill-heading {
+  font-weight: 700;
+  font-size: 22px;
+  white-space: nowrap;
+}
+
+.my-skills .section-description {
+  text-align: start;
+}
+
+/* * resume section styling */
+
+.resume-summary {
+  padding: 140px 220px;
+}
+
+/* * category parent styling */
+.category {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 5rem;
+}
+
+/* * category item  */
+.category-item {
+}
+
+/* * category item styling */
+
+.category-heading,
+.description-title {
+  color: #474747;
+  font-weight: 700;
+}
+
+.category-heading {
+  font-size: 40px;
+  margin-bottom: 2rem;
+}
+
+/* * category descriptions styling */
+
+.category-descriptions {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* * category description styling */
+
+.category-description {
+  border-bottom: 2px solid #757575;
+  padding-bottom: 1rem;
+}
+
+.description-title {
+  font-size: 30px;
+  margin-bottom: 1rem;
+}
+
+.description-subtitle,
+.description-about {
+  color: #757575;
+}
+
+.description-subtitle {
+  font-size: 24px;
+  margin-bottom: 1.3rem;
+}
+
+.description-about {
+  font-size: 20px;
+  line-height: 140%;
+}
+
+.resume-summary .btn-primary {
+  display: block;
+  margin-block-start: 3rem;
+  margin-inline: auto;
+}
+
+/* ? contact me section */
+
+.contact-me {
+  padding: 170px 220px;
+  display: flex;
+  gap: 9rem;
+}
+
+.contact-me .section-title {
+  text-align: left;
+}
+
+.connect-me-title {
+  font-size: 22px;
+  margin-top: 2.5rem;
+}
+
+.message-me form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2.5rem;
+}
+
+.message-me input[type="submit"] {
+  width: fit-content;
+  display: block;
+  margin-inline: auto;
+}
+
+#visitor-name,
+#visitor-email,
+#visitor-message {
+  border: none;
+  font-size: 24px;
+  padding: 1.5rem 1rem;
+}
+
+#visitor-message {
+  color: #757575;
+}
+
+/* Making website Responsive */
+.hide {
+  display: none;
+}
+
+@media screen and (width <= 576px) {
+  nav {
+    margin-inline: 0;
+    padding-inline: 1rem;
+  }
+
+  nav > ul {
+    display: none;
+  }
+  .header {
+    background-image: none;
+  }
+
+  .banner {
+    margin: 0;
+    flex-direction: column-reverse;
+    gap: 1rem;
+  }
+
+  .banner-title {
+    font-size: 3rem;
+  }
+
+  .banner-grettings {
+    font-size: 2rem;
+  }
+
+  .banner-content > .btn-primary {
+    padding: 1rem 1rem;
+  }
+
+  .contact-btn {
+    margin-left: 0.5rem;
+  }
+
+  .banner-content {
+    margin-block-start: 0;
+    padding-inline: 1rem;
+  }
+
+  .banner-img {
+    width: 100%;
+  }
+
+  main {
+    margin: 0;
+  }
+
+  .what-i-do {
+    padding: 0;
+  }
+
+  .my-skills {
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    padding: 0;
+  }
+
+  .my-skills > .single-skill {
+    padding: 1rem 1.3rem;
+  }
+
+  .resume-summary {
+    padding: 1rem;
+  }
+
+  .category {
+    flex-direction: column;
+  }
+
+  .contact-me {
+    padding: 1rem;
+    gap: 1rem;
+    flex-direction: column;
+  }
+
+  .message-me > form {
+    gap: 1rem;
+  }
+
+  .connect-me-title {
+    margin-top: 1rem;
+  }
+
+  #visitor-name,
+  #visitor-email,
+  #visitor-message {
+    padding: 1rem 1.5rem;
+    font-size: 1.25rem;
+  }
+
+  .about {
+    padding: 1rem;
+  }
+
+  .about-info-section {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Web Design With FlexS</title>
+    <style>
+      .container {
+        display: flex;
+        gap: 1rem;
+        @media screen and (width <= 576px) {
+          flex-direction: column;
+        }
+      }
+
+      .box {
+        background-color: slateblue;
+        padding: 1rem;
+        border-radius: 1rem;
+        flex: 1;
+        @media screen and (width <= 576px) {
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Flexible Flex Box</h2>
+    <div class="container">
+      <div class="box">
+        <h3>First Box</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit
+          numquam eius sunt natus nulla ab molestiae minima harum facilis
+          voluptates.
+        </p>
+      </div>
+      <div class="box">
+        <h3>First Box</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit
+          numquam eius sunt natus nulla ab molestiae minima harum facilis
+          voluptates.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
