@@ -1,0 +1,12 @@
+@media screen and (1200px < width <= 1400px) {
+  /* donate today section  */
+  .donate-today {
+    margin-block: 6.7rem;
+  }
+  .donate-today__description {
+    max-width: 50%;
+  }
+  .donate-today__visitor-donation {
+    min-width: 65%;
+  }
+}

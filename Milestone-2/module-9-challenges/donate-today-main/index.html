@@ -11,7 +11,15 @@
     ></script>
   </head>
   <body>
-    <div class="banner">
+    <section class="banner hide">
+      <div class="banner__image-back-effect">
+        <img
+          height="415"
+          width="831"
+          src="images/Ellipse 257.png"
+          alt="back-effect"
+        />
+      </div>
       <h1 class="banner__title">Let&apos;s Help Those Who Are More In Need</h1>
       <p class="banner__description section-description">
         Join us in making a positive impact. Every contribution helps us create
@@ -28,6 +36,44 @@
           <span>Watch Video</span>
         </button>
       </div>
-    </div>
+      <div class="banner__image-container">
+        <img
+          height="603"
+          width="409"
+          src="images/Donate 1.png"
+          alt="Donate Now Image"
+        />
+      </div>
+    </section>
+
+    <section class="donate-today">
+      <h1 class="section-title">Donate Today</h1>
+      <p class="donate-today__description section-description">
+        Lorem ipsum dolor sit amet, usu cu esse possit referrentur, at eam falli
+        deterruisset. No duo populo animal noluisse, enim
+      </p>
+      <div class="donate-today__items">
+        <div>
+          <div class="donate-today__item">100tk</div>
+          <div class="donate-today__item">200tk</div>
+        </div>
+        <div>
+          <div class="donate-today__item">500tk</div>
+        </div>
+        <div>
+          <div class="donate-today__item">1000tk</div>
+          <div class="donate-today__item">5000tk</div>
+        </div>
+      </div>
+
+      <input
+        type="text"
+        name="visitor-donation"
+        id="visitor-donation"
+        placeholder="Other Amount (taka)"
+        class="donate-today__visitor-donation"
+      />
+      <button class="donate-today__button common-button">Donate Now</button>
+    </section>
   </body>
 </html>

@@ -1,3 +1,5 @@
 @import url("./variables.css");
 @import url("./resetandutilities.css");
-@import url("./banner.css");
+@import url("./sections/banner.css");
+@import url("./sections/donate-today.css");
+@import url("mediaqueries/main-mediaqueries.css");

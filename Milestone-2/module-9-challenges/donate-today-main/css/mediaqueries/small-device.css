@@ -1,0 +1,33 @@
+@media screen and (576px <= width < 768px) {
+  /* banner section */
+
+  .banner {
+    padding: 3rem 3rem;
+  }
+
+  .banner__title {
+    max-width: 65%;
+  }
+
+  .banner__description {
+    max-width: 60%;
+  }
+
+  .banner__image-container {
+    max-width: 40%;
+    right: 0;
+  }
+
+  .banner__image-back-effect {
+    max-width: 50%;
+  }
+
+  /* *donate today section */
+
+  .donate-today {
+    margin-block: 3rem;
+  }
+  .donate-today__description {
+    max-width: 70%;
+  }
+}

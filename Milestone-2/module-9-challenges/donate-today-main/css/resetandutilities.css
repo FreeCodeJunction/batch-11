@@ -24,15 +24,28 @@ body {
   margin-inline: auto;
 }
 
+.hide {
+  display: none;
+}
 /* utilities for common styles */
+.section-title {
+  font-size: 1.7rem;
+  font: 700
+    clamp(1.7rem, 1.4773999999999998rem + 1.1130000000000002vw, 2.813rem)
+    var(--font-inter);
+  text-align: center;
+}
+
 .section-description {
-  font: 400 1.125rem var(--font-poppins);
+  font-size: 1rem;
+  font: 400 clamp(1rem, 0.975rem + 0.125vw, 1.125rem) var(--font-poppins);
   color: #707070;
   line-height: 1.5rem;
 }
 
 .common-button {
-  font: 600 1.25rem var(--font-inter);
+  font-size: 1rem;
+  font: 600 clamp(1rem, 0.95rem + 0.25vw, 1.25rem) var(--font-inter);
   color: var(--clr-white);
   border-radius: 5px;
   background: #ff5959;
@@ -43,4 +56,7 @@ body {
 /* media queries */
 
 @media screen and (width < 576px) {
+  .common-button {
+    padding: 0.8rem 1rem;
+  }
 }

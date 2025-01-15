@@ -3,8 +3,28 @@
 .banner {
   padding: 121px 57px 121px 156px;
   /* background-color: var(--bg-banner); */
-  background: url("../images/Donate\ 1.png") right 20% bottom no-repeat,
-    var(--bg-banner) url("../images/Ellipse\ 257.png") right bottom no-repeat;
+  background: var(--bg-banner);
+  position: absolute;
+}
+
+.banner__image-container {
+  position: absolute;
+  right: 15%;
+  bottom: 0;
+  z-index: 2;
+}
+
+.banner__image-back-effect {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.banner__image-container > img,
+.banner__image-back-effect > img {
+  max-width: 100%;
+  height: auto;
 }
 
 .banner__title {
@@ -27,7 +47,9 @@
 }
 
 .banner__watch-btn {
-  font: 600 1.125rem var(--font-inter);
+  font-size: 0.9rem;
+  font: 600 clamp(0.9rem, 0.855rem + 0.22499999999999998vw, 1.125rem)
+    var(--font-inter);
   color: #707070;
   gap: 0.4rem;
   display: flex;
@@ -43,12 +65,11 @@
 
 /* banner section media queries */
 
-/* * small devices */
+/* * extra small devices */
 
 @media screen and (width < 576px) {
   .banner {
     padding: 1rem 1.4rem;
-    background-image: none;
   }
 
   .banner__title {
@@ -57,5 +78,15 @@
 
   .banner__description {
     max-width: 80%;
+  }
+  .banner__image-container {
+    margin-top: 1rem;
+    position: relative;
+    right: auto;
+    bottom: auto;
+  }
+
+  .banner__image-back-effect {
+    right: 10%;
   }
 }

@@ -1,0 +1,35 @@
+@media screen and (992px <= width < 1200px) {
+  /* banner section */
+  .banner {
+    padding: 5rem 6rem;
+  }
+
+  .banner__title {
+    max-width: 50%;
+  }
+
+  .banner__description {
+    max-width: 45%;
+  }
+
+  .banner__image-container {
+    width: 40%;
+    right: 0;
+  }
+
+  .banner__image-back-effect {
+    max-width: 50%;
+  }
+
+  /* donate-today section  */
+  .donate-today {
+    margin-block: 5rem;
+  }
+  .donate-today__description {
+    max-width: 60%;
+  }
+
+  .donate-today__visitor-donation {
+    min-width: 70%;
+  }
+}

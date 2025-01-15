@@ -4,6 +4,11 @@
   /* colors */
   --clr-mild-white: #fafafa;
   --clr-white: #ffffff;
+  --clr-mild-black: #707070;
+  --clr-input-bottom: #dadada;
+  --clr-mild-red: #ff5959;
+  --clr-min-red: #ffeeee;
+  --clr-placeholder-text: #b3b3b3;
 
   /* font-family */
   --font-inter: "Inter", serif;
