@@ -25,9 +25,6 @@
   .donate-today {
     margin-block: 5rem;
   }
-  .donate-today__description {
-    max-width: 60%;
-  }
 
   .donate-today__visitor-donation {
     min-width: 70%;
