@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  background: none;
+  border: none;
+  font: inherit;
+}
+
+body {
+  max-width: 1440px;
+  margin-inline: auto;
+}
+
+/* utilities for common styles */
+.section-description {
+  font: 400 1.125rem var(--font-poppins);
+  color: #707070;
+  line-height: 1.5rem;
+}
+
+.common-button {
+  font: 600 1.25rem var(--font-inter);
+  color: var(--clr-white);
+  border-radius: 5px;
+  background: #ff5959;
+  padding: 1rem 0.75rem;
+  cursor: pointer;
+}
+
+/* media queries */
+
+@media screen and (width < 576px) {
+}

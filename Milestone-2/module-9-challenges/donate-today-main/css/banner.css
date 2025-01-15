@@ -1,0 +1,61 @@
+/* * banner section */
+
+.banner {
+  padding: 121px 57px 121px 156px;
+  /* background-color: var(--bg-banner); */
+  background: url("../images/Donate\ 1.png") right 20% bottom no-repeat,
+    var(--bg-banner) url("../images/Ellipse\ 257.png") right bottom no-repeat;
+}
+
+.banner__title {
+  font-size: 2rem;
+  font: 700 clamp(2rem, 1.5874000000000001rem + 2.0629999999999997vw, 4.063rem)
+    var(--font-inter);
+  /* font-size: clamp(2rem, 1.5874000000000001rem + 2.0629999999999997vw, 4.063rem); */
+  max-width: 42.7%;
+}
+
+.banner__description {
+  margin-block: 1.25rem 1.875rem;
+  max-width: 38.38%;
+}
+
+.banner__buttons {
+  display: flex;
+  align-items: center;
+  gap: 1.876rem;
+}
+
+.banner__watch-btn {
+  font: 600 1.125rem var(--font-inter);
+  color: #707070;
+  gap: 0.4rem;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+}
+
+.banner__watch-btn > svg {
+  fill: #707070;
+  width: 1.4rem;
+  aspect-ratio: 1;
+}
+
+/* banner section media queries */
+
+/* * small devices */
+
+@media screen and (width < 576px) {
+  .banner {
+    padding: 1rem 1.4rem;
+    background-image: none;
+  }
+
+  .banner__title {
+    max-width: 100%;
+  }
+
+  .banner__description {
+    max-width: 80%;
+  }
+}
