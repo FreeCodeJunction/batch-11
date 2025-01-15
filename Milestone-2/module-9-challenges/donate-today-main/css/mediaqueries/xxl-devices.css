@@ -10,4 +10,37 @@
   .donate-today__visitor-donation {
     min-width: 50%;
   }
+
+  /* article section  */
+
+  .article {
+    margin-block: 130px;
+  }
+
+  .article__item {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+  }
+
+  .article__item:last-child > .article__content {
+    order: 1;
+  }
+
+  .article__item:last-child > div:first-child {
+    order: 2;
+  }
+
+  .article__item .section-description {
+    max-width: 90%;
+  }
+
+  .article__item > div:first-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .article__image {
+    max-width: 90%;
+  }
 }

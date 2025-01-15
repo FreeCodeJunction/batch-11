@@ -1,0 +1,41 @@
+.article {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-block: 2rem;
+}
+
+.article__item {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.article__image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.article__content {
+  padding-left: 1rem;
+}
+
+.article__title {
+  text-align: left;
+}
+
+.article .section-description {
+  text-align: left;
+  margin-inline: 0;
+}
+
+.article__description-one {
+  margin-block: 1rem;
+}
+
+.article__button {
+  text-align: left;
+  padding: 0.6rem 1.7rem;
+  margin-top: 1.7rem;
+}

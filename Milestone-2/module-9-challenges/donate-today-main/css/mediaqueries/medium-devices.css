@@ -25,4 +25,10 @@
   .donate-today {
     margin-block: 4rem;
   }
+
+  /* article  */
+
+  .article {
+    margin-block: 50px;
+  }
 }
