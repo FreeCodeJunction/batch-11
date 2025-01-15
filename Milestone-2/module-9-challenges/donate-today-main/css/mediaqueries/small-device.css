@@ -27,7 +27,9 @@
   .donate-today {
     margin-block: 3rem;
   }
-  .donate-today__description {
-    max-width: 70%;
+
+  /* donate plan section  */
+  .donate-plan__items {
+    flex-flow: row wrap;
   }
 }

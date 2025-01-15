@@ -4,7 +4,7 @@
   padding: 121px 57px 121px 156px;
   /* background-color: var(--bg-banner); */
   background: var(--bg-banner);
-  position: absolute;
+  position: relative;
 }
 
 .banner__image-container {
@@ -38,6 +38,8 @@
 .banner__description {
   margin-block: 1.25rem 1.875rem;
   max-width: 38.38%;
+  text-align: left;
+  margin-inline: 0;
 }
 
 .banner__buttons {

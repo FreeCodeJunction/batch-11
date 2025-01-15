@@ -41,6 +41,10 @@ body {
   font: 400 clamp(1rem, 0.975rem + 0.125vw, 1.125rem) var(--font-poppins);
   color: #707070;
   line-height: 1.5rem;
+  margin-block: 0.5rem;
+  text-align: center;
+  max-width: 100%;
+  margin-inline: auto;
 }
 
 .common-button {
@@ -49,14 +53,74 @@ body {
   color: var(--clr-white);
   border-radius: 5px;
   background: #ff5959;
-  padding: 1rem 0.75rem;
+  padding: 0.8rem 1rem;
   cursor: pointer;
 }
 
 /* media queries */
 
-@media screen and (width < 576px) {
+/* small devices  */
+@media screen and (576px < width <= 768px) {
+  .section-description {
+    max-width: 70%;
+  }
+
+  main {
+    padding-inline: 25px;
+  }
+}
+
+/* medium devices  */
+@media screen and (768px < width <= 992px) {
+  .section-description {
+    max-width: 70%;
+  }
   .common-button {
-    padding: 0.8rem 1rem;
+    padding: 1rem 0.75rem;
+  }
+
+  main {
+    padding-inline: 50px;
+  }
+}
+
+/* large devices  */
+@media screen and (992px < width <= 1200px) {
+  .section-description {
+    max-width: 60%;
+  }
+  .common-button {
+    padding: 1rem 0.75rem;
+  }
+
+  main {
+    padding-inline: 70px;
+  }
+}
+
+/* xl devices  */
+@media screen and (1200px < width <= 1400px) {
+  .section-description {
+    max-width: 50%;
+  }
+  .common-button {
+    padding: 1rem 0.75rem;
+  }
+
+  main {
+    padding-inline: 100px;
+  }
+}
+
+/* * xxl large devices */
+@media screen and (width > 1400px) {
+  .section-description {
+    max-width: 50%;
+  }
+  .common-button {
+    padding: 1rem 0.75rem;
+  }
+  main {
+    padding-inline: 157px;
   }
 }

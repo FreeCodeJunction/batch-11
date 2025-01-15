@@ -2,4 +2,5 @@
 @import url("./resetandutilities.css");
 @import url("./sections/banner.css");
 @import url("./sections/donate-today.css");
+@import url("./sections/donate-plan.css");
 @import url("mediaqueries/main-mediaqueries.css");
