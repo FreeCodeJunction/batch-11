@@ -8,5 +8,7 @@
 @import url("./sections/featured.css");
 @import url("./sections/discount.css");
 @import url("./sections/instagram.css");
+@import url("./sections/latest-deal.css");
+@import url("./sections/footer.css");
 /* media queries */
 @import url("./mediaqueries/mediaqueries.css");

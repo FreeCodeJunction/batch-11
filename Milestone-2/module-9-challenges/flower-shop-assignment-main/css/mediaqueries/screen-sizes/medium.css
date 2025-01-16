@@ -43,4 +43,10 @@
   .instagram__items > img {
     width: 100%;
   }
+
+  /* footer section */
+
+  .footer__description {
+    max-width: 60%;
+  }
 }

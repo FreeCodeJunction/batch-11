@@ -1,0 +1,35 @@
+.latest-deal {
+  background: url("./../../assets/Rectangle\ 9.png") left top no-repeat;
+}
+
+.latest-deal__title {
+  text-align: center;
+}
+
+.latest-deal__description {
+  font-size: 0.9rem;
+  margin-block: 0 1.5rem;
+}
+
+.latest-deal__visitor-info-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  justify-items: center;
+}
+
+.latest-deal__visitor-info-container > #visitor-email {
+  font: 400 1rem var(--font-lato);
+  border: none;
+  background-color: var(--clr-pure-white);
+  border-radius: 0.5rem;
+  color: rgba(39, 39, 39, 0.6);
+  padding-block: 0.8rem;
+  text-align: center;
+  display: block;
+  width: 80%;
+}
+.latest-deal__visitor-info-container > .section-button {
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+}
