@@ -51,4 +51,18 @@
   .instagram__items {
     grid-template-columns: repeat(4, 1fr);
   }
+
+  .latest-deal {
+    padding-bottom: 4rem;
+  }
+
+  /* footer section */
+
+  .footer {
+    margin-top: 7rem;
+  }
+
+  .footer__description {
+    max-width: 40%;
+  }
 }

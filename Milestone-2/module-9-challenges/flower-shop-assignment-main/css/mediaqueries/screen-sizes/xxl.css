@@ -28,4 +28,13 @@
     padding: 6.25rem 15rem;
     margin-block: 8rem;
   }
+
+  /* latest deal  */
+
+  .latest-deal {
+    padding: 10rem 7rem 6rem;
+  }
+  .latest-deal__visitor-info-container > #visitor-email {
+    width: 65%;
+  }
 }

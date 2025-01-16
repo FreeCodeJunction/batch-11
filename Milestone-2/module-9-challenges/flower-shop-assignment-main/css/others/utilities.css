@@ -27,7 +27,7 @@
   border: none;
   border-radius: 8px;
   color: var(--clr-pure-white);
-  font: 700 1.25rem inherit;
+  font: 700 1.25rem var(--font-lato);
   background: var(--clr-mild-red);
   padding: 1.25rem 2.688rem;
   cursor: pointer;

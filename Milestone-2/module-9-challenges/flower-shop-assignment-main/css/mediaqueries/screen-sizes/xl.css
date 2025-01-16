@@ -30,4 +30,17 @@
   .instagram {
     margin-block: 7rem;
   }
+
+  /* latest deal  */
+  .latest-deal {
+    background-position: center;
+  }
+
+  .footer {
+    margin-top: 10rem;
+  }
+
+  .footer__description {
+    max-width: 30%;
+  }
 }
