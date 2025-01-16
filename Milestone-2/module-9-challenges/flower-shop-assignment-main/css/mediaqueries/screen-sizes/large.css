@@ -1,0 +1,9 @@
+@media screen and (min-width: 992px) {
+  .banner__content {
+    padding-bottom: 3rem;
+  }
+
+  .banner__image {
+    align-items: end;
+  }
+}

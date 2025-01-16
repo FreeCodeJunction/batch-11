@@ -1,0 +1,20 @@
+@media screen and (576px <= width) {
+  /* banner sections */
+  .banner {
+    flex-direction: row;
+    gap: 0;
+  }
+
+  .banner__content {
+    flex: 1;
+  }
+
+  .banner__image {
+    flex: 0.8;
+  }
+
+  .banner__image > img {
+    object-fit: contain;
+    max-width: 100%;
+  }
+}

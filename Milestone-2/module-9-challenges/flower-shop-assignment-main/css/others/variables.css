@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+:root {
+  --font-lato: "Lato", serif;
+
+  /* colors */
+  --clr-mild-gray: rgba(39, 39, 39, 0.6);
+  --clr-pure-white: #ffffff;
+  --clr-mild-red: #e55473;
+  --clr-halka-red: rgba(229, 84, 115, 0.1);
+
+  /* section variables */
+  --section-description-color: var(--clr-mild-gray, gray);
+}

@@ -1,0 +1,10 @@
+@import url("./others/variables.css");
+
+@import url("./others/css-reset.css");
+
+@import url("./others/utilities.css");
+/* imported  sections  css files  */
+@import url("./sections/banner.css");
+
+/* media queries */
+@import url("./mediaqueries/mediaqueries.css");

@@ -1,0 +1,9 @@
+@media screen and (min-width: 1200px) {
+  .banner__image {
+    flex: 0.5;
+  }
+
+  .banner__image > img {
+    max-width: 100%;
+  }
+}

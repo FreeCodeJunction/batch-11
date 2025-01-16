@@ -1,0 +1,10 @@
+@media screen and (min-width: 768px) {
+  /* banner sections */
+  .banner {
+    gap: 3rem;
+  }
+
+  .banner__image {
+    flex: 0.5;
+  }
+}
