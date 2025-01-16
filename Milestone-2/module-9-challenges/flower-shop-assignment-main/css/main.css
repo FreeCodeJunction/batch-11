@@ -5,5 +5,7 @@
 @import url("./others/utilities.css");
 /* imported  sections  css files  */
 @import url("./sections/banner.css");
-@import url("./sections/featured.css"); /* media queries */
+@import url("./sections/featured.css");
+@import url("./sections/discount.css");
+/* media queries */
 @import url("./mediaqueries/mediaqueries.css");

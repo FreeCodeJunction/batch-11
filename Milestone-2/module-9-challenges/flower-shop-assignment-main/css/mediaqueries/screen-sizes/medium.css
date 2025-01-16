@@ -21,4 +21,10 @@
   .featured__description {
     max-width: 70%;
   }
+
+  /* discount section  */
+
+  .discount {
+    margin-block: 5rem;
+  }
 }

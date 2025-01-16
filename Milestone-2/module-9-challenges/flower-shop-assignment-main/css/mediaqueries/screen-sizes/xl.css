@@ -19,4 +19,10 @@
   .featured__delivery-items {
     justify-content: space-around;
   }
+
+  /* discount section  */
+  .discount {
+    padding-bottom: 4rem;
+    margin-block: 7rem;
+  }
 }
