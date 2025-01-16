@@ -27,4 +27,10 @@
   font-weight: 800;
   font-size: 2.3rem;
   font-size: clamp(2.3rem, 1.7599999999999998rem + 2.7vw, 5rem);
+  text-align: left;
+}
+
+.banner__description {
+  text-align: left;
+  margin: 0;
 }

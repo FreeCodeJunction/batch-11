@@ -6,4 +6,17 @@
   .banner__image > img {
     max-width: 100%;
   }
+
+  /* featured section */
+  .featured {
+    margin-bottom: 7rem;
+    padding-right: 7rem;
+  }
+  .featured__description {
+    max-width: 50%;
+  }
+
+  .featured__delivery-items {
+    justify-content: space-around;
+  }
 }
