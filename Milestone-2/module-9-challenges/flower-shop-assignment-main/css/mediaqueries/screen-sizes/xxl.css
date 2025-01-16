@@ -7,4 +7,18 @@
   .banner__image {
     flex: 0.5;
   }
+
+  /* featured section  */
+
+  .featured {
+    margin-bottom: 8rem;
+  }
+
+  .featured__delivery-items {
+    padding-block: 10rem;
+  }
+
+  .featured {
+    padding-right: 15rem;
+  }
 }

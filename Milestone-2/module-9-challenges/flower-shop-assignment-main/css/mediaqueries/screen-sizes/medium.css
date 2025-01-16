@@ -7,4 +7,18 @@
   .banner__image {
     flex: 0.5;
   }
+
+  /* featured section*/
+
+  .featured__image-container {
+    height: 400px;
+  }
+
+  .featured__delivery-items {
+    gap: 3rem;
+  }
+
+  .featured__description {
+    max-width: 70%;
+  }
 }

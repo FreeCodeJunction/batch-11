@@ -8,6 +8,7 @@
   --clr-pure-white: #ffffff;
   --clr-mild-red: #e55473;
   --clr-halka-red: rgba(229, 84, 115, 0.1);
+  --clr-ninety-black: #272727;
 
   /* section variables */
   --section-description-color: var(--clr-mild-gray, gray);

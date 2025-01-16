@@ -1,3 +1,7 @@
+.hide {
+  display: none !important;
+}
+
 .section-inline-padding {
   padding: 1rem 2rem;
 }
@@ -6,6 +10,7 @@
   font-size: 1.8rem;
   font-size: clamp(1.8rem, 1.6600000000000001rem + 0.7vw, 2.5rem);
   font-weight: 800;
+  text-align: center;
 }
 
 .section-description {
@@ -14,6 +19,8 @@
   line-height: 1.5rem;
   font-size: 1.125rem;
   color: var(--section-description-color);
+  text-align: center;
+  margin-inline: auto;
 }
 
 .section-button {
@@ -23,11 +30,16 @@
   font: 700 1.25rem inherit;
   background: var(--clr-mild-red);
   padding: 1.25rem 2.688rem;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 576px) {
   .section-inline-padding {
     padding: 3rem 0 3rem 2rem;
+  }
+
+  .section-description {
+    max-width: 80%;
   }
 }
 
