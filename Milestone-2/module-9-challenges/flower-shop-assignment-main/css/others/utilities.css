@@ -33,6 +33,10 @@
   cursor: pointer;
 }
 
+.red {
+  color: #e55473;
+}
+
 @media screen and (min-width: 576px) {
   .section-inline-padding {
     padding: 3rem 0 3rem 2rem;

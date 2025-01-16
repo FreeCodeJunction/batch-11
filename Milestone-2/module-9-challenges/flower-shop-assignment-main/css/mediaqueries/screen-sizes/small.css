@@ -17,4 +17,17 @@
     object-fit: contain;
     max-width: 100%;
   }
+
+  /* discount section  */
+  .discount {
+    margin-block: 6rem;
+  }
+
+  .discount__description {
+    max-width: 70%;
+  }
+
+  .discount__image-container > img {
+    max-width: 60%;
+  }
 }

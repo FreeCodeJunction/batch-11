@@ -21,4 +21,11 @@
   .featured {
     padding-right: 15rem;
   }
+
+  /* discount section  */
+
+  .discount {
+    padding: 6.25rem 15rem;
+    margin-block: 8rem;
+  }
 }
