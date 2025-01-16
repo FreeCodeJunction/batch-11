@@ -27,4 +27,20 @@
   .discount {
     margin-block: 5rem;
   }
+
+  /* instagram section */
+
+  .instagram {
+    margin-block: 4.2rem;
+  }
+
+  .instagram__items {
+    grid-template-columns: repeat(2, 342px);
+    justify-content: center;
+    column-gap: 2rem;
+  }
+
+  .instagram__items > img {
+    width: 100%;
+  }
 }

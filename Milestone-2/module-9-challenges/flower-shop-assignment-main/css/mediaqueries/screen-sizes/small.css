@@ -30,4 +30,9 @@
   .discount__image-container > img {
     max-width: 60%;
   }
+
+  .instagram {
+    margin-block: 2.8rem;
+    padding-block: 0;
+  }
 }

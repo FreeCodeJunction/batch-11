@@ -41,4 +41,14 @@
   .discount__image-container {
     flex: 1;
   }
+
+  /* discount section */
+
+  .instagram {
+    margin-block: 5.6rem;
+  }
+
+  .instagram__items {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
