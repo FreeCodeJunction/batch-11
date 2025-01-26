@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module 11 | CSS 3 Features</title>
+    <style>
+      .box {
+        height: 300px;
+        aspect-ratio: 1;
+        border: 1px solid aqua;
+      }
+      .box:nth-child(1) {
+        overflow-x: hidden;
+        overflow-y: scroll;
+      }
+
+      .para {
+        width: 300px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      svg {
+        fill: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360" fill="#FFF">
+      <path
+        fill="none"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="5"
+        d="M440 180a49.6 49.6 0 0 1-26-56.3l6-23.7h-20V90H297.4A69.8 69.8 0 0 1 240 60l-1.6 2.2A69.8 69.8 0 0 1 182.6 90H80v10H60l6 23.7c5.5 22.5-5.2 46-26 56.3a49.6 49.6 0 0 1 26 56.3L60 260h20v10h102.6a69.8 69.8 0 0 1 57.4 30l1.6-2.2a69.8 69.8 0 0 1 55.8-27.8H400v-10h20l-6-23.7a49.6 49.6 0 0 1 26-56.3Z"
+      ></path>
+    </svg>
+    <div class="box">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+      commodi similique, excepturi magni eos recusandae nemo dicta doloribus qui
+      nulla ea perferendis repellat esse cumque et dolore reiciendis fuga
+      eveniet? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad,
+      consequatur fuga nobis nesciunt autem suscipit eum esse quaerat officiis
+      sint? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe,
+      nihil ipsa non nesciunt, veniam ad facilis quasi deleniti corrupti quo
+      fuga amet temporibus at omnis ipsam quae laboriosam optio, deserunt sequi!
+      Itaque saepe quos eligendi sit architecto quas unde nesciunt hic
+      repudiandae quam perspiciatis ex, deserunt omnis doloribus pariatur fugit
+      quia eos beatae, cum vel natus magni fuga? Vel, quos.
+    </div>
+
+    <div class="box">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus harum
+      maiores explicabo voluptatum fugit eius obcaecati, saepe officia
+      exercitationem odio architecto magnam asperiores aperiam? Porro, tempora
+      vitae voluptas praesentium eos, corporis esse expedita ipsam eum pariatur
+      ipsum accusamus molestias sed beatae placeat! Blanditiis assumenda sint
+      nulla adipisci voluptate mollitia voluptatibus? Lorem ipsum dolor, sit
+      amet consectetur adipisicing elit. Porro modi quas, illum, sequi
+      doloremque nisi consequuntur nesciunt iste voluptatem esse necessitatibus
+      vel sapiente? Beatae, nulla nam possimus accusamus natus maxime?
+    </div>
+
+    <p class="para title">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, ipsa
+      sequi amet mollitia ad, recusandae id, rem animi quisquam nulla
+      consectetur. Molestiae neque distinctio at, nesciunt perspiciatis iure
+      quam voluptates!
+    </p>
+  </body>
+</html>
