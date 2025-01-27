@@ -13,25 +13,50 @@
   <body>
     <!-- wrapper  -->
     <div class="max-w-[1440px] mx-auto">
-      <header class="bg-mild-orange px-4 md:px-0">
+      <header class="bg-mild-orange px-4 md:px-0 pt-6 pb-[130px]">
         <nav
-          class="flex items-center justify-between max-w-[1170px] mx-auto pt-6 px-"
+          class="flex items-center justify-between max-w-[1170px] mx-auto px-1"
         >
           <img
             src="src/icons/logo.png"
-            class="md:max-w-[280px] max-w-[200px]"
+            class="sm:max-w-[280px] max-w-[200px]"
             alt="logo image"
           />
           <ul
-            class="hidden md:flex gap-14 font-roboto font-medium text-base leading-6 text-mild-black"
+            class="hidden sm:flex gap-14 font-roboto font-medium text-base leading-6 text-mild-black"
           >
             <li><a href="Home">Home</a></li>
             <li><a href="About">About</a></li>
             <li><a href="Product">Product</a></li>
             <li><a href="Contact us">Contact us</a></li>
           </ul>
-          <div class="md:hidden"><i class="fa-solid fa-bars text-3xl"></i></div>
+          <div class="sm:hidden"><i class="fa-solid fa-bars text-3xl"></i></div>
         </nav>
+        <!-- banner section -->
+        <section
+          class="max-w-[1170px] mx-auto flex sm:flex-row items-center justify-between flex-col mt-12 sm:mt-0"
+        >
+          <!-- banner content  -->
+          <div class="">
+            <h1 class="font-bebas text-primary-heading leading-none">
+              <span class="text-strong-orange">Be the Penguins </span> <br />
+              of Winter
+            </h1>
+            <p class="font-roboto leading-6 text-banner-para max-w-[357px]">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </p>
+            <button
+              class="text-white font-roboto font-medium leading-6 bg-gradient-to-r from-gradstop-one to-gradstop-two py-4 px-8 rounded-lg flex items-center gap-1 mt-2"
+            >
+              <span><i class="fa-solid fa-cart-shopping"></i></span>BUY NOW
+            </button>
+          </div>
+          <!-- banner image container  -->
+          <div>
+            <img src="src/images/model.png" alt="Model image" />
+          </div>
+        </section>
       </header>
     </div>
   </body>
