@@ -5,11 +5,18 @@
   --font-bebas: "Bebas Neue", serif;
   --font-roboto: "Roboto", serif;
   --font-montserrat: "Montserrat", serif;
+  /* colors */
   --color-mild-black: #3c3c3c;
   --color-mild-orange: #fffbf0;
   --color-strong-orange: #fabe4c;
   --color-banner-para: #3e3e3e;
+  --color-jacket-heading: #363958;
+  --color-jacket-bg: #f1f1f1;
+
+  /* gradient colors */
   --color-gradstop-one: #a4bc46;
   --color-gradstop-two: #85a019;
+
+  /* font sizes */
   --text-primary-heading: 80px;
 }
