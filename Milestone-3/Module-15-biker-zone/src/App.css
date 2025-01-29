@@ -8,3 +8,7 @@
   --color-header-bg: #264653;
   --color-hero-bg: rgba(231, 111, 81, 0.1);
 }
+
+.max-inline {
+  @apply max-w-[1125px] mx-auto;
+}

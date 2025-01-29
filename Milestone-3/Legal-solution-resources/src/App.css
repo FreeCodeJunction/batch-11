@@ -1,2 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --banner-image-url: url("./../images/banner.png");
+}
+
 @import "tailwindcss";
 @plugin "daisyui";
+
+@theme {
+  --font-poppins: "Poppins", serif;
+  --font-garamond: "EB Garamond", serif;
+  /* colors */
+  --color-dark-three: rgba(112, 112, 112, 1);
+  --color-regular-btn-bg: #b68c5a;
+  --color-dark-six: rgba(231, 231, 231, 1);
+  --color-dark-four: rgba(160, 160, 160, 1);
+  --color-grad-one: rgba(17, 17, 17, 1);
+  --color-grad-two: rgba(17, 17, 17, 0);
+}
+
+.max-inline {
+  @apply max-w-[1170px] mx-auto;
+}
+
+.regular-button {
+  @apply font-poppins text-white font-semibold text-lg py-5 px-7 rounded-lg bg-regular-btn-bg;
+}
