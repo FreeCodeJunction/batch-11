@@ -17,6 +17,10 @@
   --color-dark-four: rgba(160, 160, 160, 1);
   --color-grad-one: rgba(17, 17, 17, 1);
   --color-grad-two: rgba(17, 17, 17, 0);
+  --color-grad-three: rgba(243, 243, 243, 1);
+  --color-grad-four: rgba(243, 243, 243, 0);
+  --color-dark-two: rgba(65, 64, 64, 1);
+  --color-dark-six: rgba(231, 231, 231, 1);
 }
 
 .max-inline {
@@ -25,4 +29,12 @@
 
 .regular-button {
   @apply font-poppins text-white font-semibold text-lg py-5 px-7 rounded-lg bg-regular-btn-bg;
+}
+
+.regular-heading {
+  @apply font-garamond font-extrabold text-4xl text-dark-two text-center;
+}
+
+.regular-para {
+  @apply leading-6 text-dark-three text-center;
 }
