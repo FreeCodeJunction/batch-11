@@ -16,9 +16,11 @@
   --color-dark-six: rgba(231, 231, 231, 1);
   --color-dark-four: rgba(160, 160, 160, 1);
   --color-grad-one: rgba(17, 17, 17, 1);
+  --color-client-bg: rgba(17, 17, 17, 0.8);
   --color-grad-two: rgba(17, 17, 17, 0);
   --color-grad-three: rgba(243, 243, 243, 1);
   --color-grad-four: rgba(243, 243, 243, 0);
+  --color-dark-seven: rgba(243, 243, 243, 1);
   --color-dark-two: rgba(65, 64, 64, 1);
   --color-dark-six: rgba(231, 231, 231, 1);
 }
@@ -37,4 +39,8 @@
 
 .regular-para {
   @apply leading-6 text-dark-three text-center;
+}
+
+.regular-content {
+  @apply leading-6 text-dark-three;
 }
