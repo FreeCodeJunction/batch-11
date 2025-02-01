@@ -9,6 +9,9 @@
   --color-hero-bg: rgba(231, 111, 81, 0.1);
   --color-first: #18191f;
   --color-second: #6c6c6c;
+  --color-three: #dedede;
+  --color-four: #23a6f0;
+  --color-five: #252b42;
 }
 
 .max-inline {
