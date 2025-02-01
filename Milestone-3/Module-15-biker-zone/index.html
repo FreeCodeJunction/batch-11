@@ -11,8 +11,9 @@
   </head>
   <body>
     <!-- * wrapper div -->
-    <div class="max-w-[1440px] mx-auto bg-yellow-400">
-      <header class="pt-10 bg-red-800">
+    <div class="max-w-[1440px] mx-auto">
+      <!-- header section -->
+      <header class="pt-10 pb-20 sm:pb-27">
         <!-- Navigation Section for mobile and Desktop -->
         <nav
           class="max-w-[1125px] mx-auto flex justify-between items-center px-4 sm:px-0"
@@ -28,11 +29,7 @@
                 <li><a href="News">News</a></li>
                 <li><a href="Contact">Contact</a></li>
               </ul>
-              <button
-                class="btn bg-primary-btn-bg text-white border-none shadow-none"
-              >
-                Login
-              </button>
+              <button class="regular-button">Login</button>
             </div>
             <!-- mobile navigation -->
             <div class="sm:hidden">
@@ -43,7 +40,7 @@
 
         <!-- Hero Section With Daisy Ui -->
         <div
-          class="carousel flex mx-auto max-w-[1125px] bg-hero-bg mt-6 sm:mt-13 mb-20 sm:mb-27 rounded-lg"
+          class="carousel flex mx-auto max-w-[1125px] bg-hero-bg mt-6 sm:mt-13 rounded-lg"
         >
           <!-- slide One  -->
           <div
@@ -64,11 +61,7 @@
                 Amet minim mollit non deserunt ullamco est sit aliqua dolor do
                 amet sint. Velit officia consequat duis enim velit mollit.
               </p>
-              <button
-                class="btn bg-primary-btn-bg text-white border-none shadow-none"
-              >
-                Purchase
-              </button>
+              <button class="regular-button">Purchase</button>
             </div>
             <!-- slider Image  -->
             <div>
@@ -112,11 +105,7 @@
                 Amet minim mollit non deserunt ullamco est sit aliqua dolor do
                 amet sint. Velit officia consequat duis enim velit mollit.
               </p>
-              <button
-                class="btn bg-primary-btn-bg text-white border-none shadow-none"
-              >
-                Purchase
-              </button>
+              <button class="regular-button">Purchase</button>
             </div>
             <!-- slider Image  -->
             <div>
@@ -160,11 +149,7 @@
                 Amet minim mollit non deserunt ullamco est sit aliqua dolor do
                 amet sint. Velit officia consequat duis enim velit mollit.
               </p>
-              <button
-                class="btn bg-primary-btn-bg text-white border-none shadow-none"
-              >
-                Purchase
-              </button>
+              <button class="regular-button">Purchase</button>
             </div>
             <!-- slider Image  -->
             <div>
@@ -191,8 +176,125 @@
           </div>
         </div>
       </header>
-      <main class="max-inline bg-green-700">
-        <h1 class="regular-heading">Featured Bikes In This Year</h1>
+      <!-- main section start -->
+      <main class="max-inline">
+        <!-- ! Featured Bike Section -->
+        <section>
+          <h1 class="regular-heading">Featured Bikes In This Year</h1>
+          <p class="font-semibold text-sm text-primary-btn-bg text-center">
+            Best bike collection
+          </p>
+          <!-- Gallery  -->
+          <div
+            class="grid grid-cols-1 gap-8 sm:gap-0 sm:grid-cols-3 justify-items-center mt-11"
+          >
+            <div>
+              <img
+                class="w-full max-w-[288px] h-auto"
+                src="images/others/feature-bike.png"
+                alt="Bike Image"
+              />
+            </div>
+            <div>
+              <img
+                class="w-full max-w-[288px] h-auto"
+                src="images/others/feature-bike.png"
+                alt="Bike Image"
+              />
+            </div>
+            <div>
+              <img
+                class="w-full h-auto max-w-[288px]"
+                src="images/others/feature-bike.png"
+                alt="Bike Image"
+              />
+            </div>
+          </div>
+        </section>
+
+        <!--! Latest News Section -->
+        <section class="sm:my-32 mt-17 mb-20 px-4 sm:px-0">
+          <h2 class="regular-heading">latest News</h2>
+          <!-- News Grid Container -->
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-5 mt-12">
+            <!-- First Item -->
+            <div
+              class="rounded-lg sm:p-5 flex items-start flex-col sm:gap-10 gap-8 p-4 shadow-sm"
+            >
+              <div>
+                <img src="images/others/latest1.png" alt="News Poster" />
+              </div>
+              <div class="space-y-[10px]">
+                <h3
+                  class="font-semibold sm:text-[1.75rem] sm:leading-10 text-first leading-9 text-2xl"
+                >
+                  Ducati XDIAVEL S-73
+                </h3>
+                <p
+                  class="text-sm leading-7 text-second sm:text-base sm:leading-8"
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Lacus, fermentum amet faucibus sed id nisi lectus at.
+                </p>
+              </div>
+              <button
+                class="font-medium text-base sm:text-lg py-3 px-5 text-primary-btn-bg hover:bg-primary-btn-bg hover:text-white transition-colors cursor-pointer bg-white border-1 border-primary-btn-bg rounded-lg"
+              >
+                Read More
+              </button>
+            </div>
+            <div
+              class="rounded-lg sm:p-5 flex items-start flex-col sm:gap-10 gap-8 p-4 shadow-sm"
+            >
+              <div>
+                <img src="images/others/latest2.png" alt="News Poster" />
+              </div>
+              <div class="space-y-[10px]">
+                <h3
+                  class="font-semibold sm:text-[1.75rem] text-nowrap sm:leading-10 text-first leading-9 text-2xl"
+                >
+                  Motorcycles & Scooters
+                </h3>
+                <p
+                  class="text-sm leading-7 text-second sm:text-base sm:leading-8"
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Lacus, fermentum amet faucibus sed id nisi lectus at.
+                </p>
+              </div>
+              <button
+                class="font-medium text-base sm:text-lg py-3 px-5 text-primary-btn-bg hover:bg-primary-btn-bg hover:text-white transition-colors cursor-pointer bg-white border-1 border-primary-btn-bg rounded-lg"
+              >
+                Read More
+              </button>
+            </div>
+            <div
+              class="rounded-lg sm:p-5 flex items-start flex-col sm:gap-10 gap-8 p-4 shadow-sm"
+            >
+              <div>
+                <img src="images/others/latest3.png" alt="News Poster" />
+              </div>
+              <div class="space-y-[10px]">
+                <h3
+                  class="font-semibold sm:text-[1.75rem] sm:leading-10 text-first leading-9 text-2xl"
+                >
+                  2021 Honda CBR500R
+                </h3>
+                <p
+                  class="text-sm leading-7 text-second sm:text-base sm:leading-8"
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Lacus, fermentum amet faucibus sed id nisi lectus at.
+                </p>
+              </div>
+              <button
+                class="font-medium text-base sm:text-lg py-3 px-5 text-primary-btn-bg hover:bg-primary-btn-bg hover:text-white transition-colors cursor-pointer bg-white border-1 border-primary-btn-bg rounded-lg"
+              >
+                Read More
+              </button>
+            </div>
+          </div>
+        </section>
       </main>
     </div>
   </body>

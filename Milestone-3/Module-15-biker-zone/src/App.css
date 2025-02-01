@@ -7,8 +7,18 @@
   --color-primary-btn-bg: #e76f51;
   --color-header-bg: #264653;
   --color-hero-bg: rgba(231, 111, 81, 0.1);
+  --color-first: #18191f;
+  --color-second: #6c6c6c;
 }
 
 .max-inline {
   @apply max-w-[1125px] mx-auto;
+}
+
+.regular-heading {
+  @apply sm:text-5xl text-2xl font-semibold text-black text-center;
+}
+
+.regular-button {
+  @apply btn bg-primary-btn-bg text-white border-none shadow-none;
 }
