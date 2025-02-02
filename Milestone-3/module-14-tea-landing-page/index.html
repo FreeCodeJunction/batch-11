@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module 15 | Tea Landing Page</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css" />
+    <style type="text/tailwindcss">
+      @theme {
+        --font-manrope: "Manrope", serif;
+        --color-primary: #ff0000;
+        --color-secondary: #ff8938;
+        --color-dark-one: #1c1c1c;
+        --color-dark-three: #777777;
+      }
+      .max-inline {
+        @apply max-w-[1140px] mx-auto px-4 sm:px-0;
+      }
+      .gradient-primary {
+        @apply bg-gradient-to-r from-secondary to-primary;
+      }
+      .regular-button {
+        @apply text-white sm:text-xl text-lg font-bold sm:py-[18px] py-3 sm:px-5 px-5 rounded-lg;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- wrapper -->
+    <div class="font-manrope max-w-[1600px] mx-auto">
+      <!-- ! Header Section -->
+      <header
+        class="max-inline px-4 sm:px-0 grid grid-cols-1 sm:grid-cols-2 sm:mt-17 sm:mb-50 mt-10 mb-25"
+      >
+        <!-- header content -->
+        <div class="sm:space-y-7 space-y-4">
+          <h1
+            class="font-extrabold sm:text-[5rem] text-5xl sm:leading-25 leading-14 text-dark-one"
+          >
+            It's good tea time at The Tea House
+          </h1>
+          <p
+            class="sm:text-lg text-sm sm:leading-7 leading-6 font-medium text-dark-three max-w-[434px]"
+          >
+            Tea and Botanical Solutions Supplier Give Optimum Satisfaction To
+            Your Taste Buds.
+          </p>
+          <button
+            class="regular-button gradient-primary flex items-center gap-2"
+          >
+            Explore More
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 32 32"
+              class="sm:h-6 h-4 aspect-square fill-white -rotate-45"
+            >
+              <path
+                d="m31.71 15.29-10-10-1.42 1.42 8.3 8.29H0v2h28.59l-8.29 8.29 1.41 1.41 10-10a1 1 0 0 0 0-1.41z"
+                data-name="3-Arrow Right"
+              />
+            </svg>
+          </button>
+        </div>
+        <!-- header image -->
+        <div class="relative self-end">
+          <img src="images/banner.png" alt="banner image" />
+          <div
+            class="absolute bottom-0 left-[7%] bg-white z-10 sm:py-5 py-2 sm:px-6 px-3 rounded-sm shadow-sm flex gap-2 items-center"
+          >
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="aspect-square sm:h-12 h-10 fill-yellow-500"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m21.5 9.757-5.278 4.354 1.649 7.389L12 17.278 6.129 21.5l1.649-7.389L2.5 9.757l6.333-.924L12 2.5l3.167 6.333z"
+                />
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-extrabold sm:text-3xl text-xl text-dark-one">
+                5.00
+              </h3>
+              <p class="font-semibold text-dark-three text-sm sm:text-base">
+                Trust Pilot Ratings
+              </p>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+  </body>
+</html>
