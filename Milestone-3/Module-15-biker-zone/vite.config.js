@@ -3,6 +3,6 @@ import tailwindcss from "@tailwindcss/vite";
 // https://vite.dev/config/
 export default defineConfig({
   // base url
-  base: "batch-11/Milestone-3/Module-15-biker-zone/",
+  base: "/batch-11/",
   plugins: [tailwindcss()],
 });
