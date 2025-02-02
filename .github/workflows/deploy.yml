@@ -48,4 +48,4 @@ jobs:
           path: 'Milestone-3/Module-15-biker-zone/dist/'
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v2
