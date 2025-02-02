@@ -29,7 +29,7 @@ jobs:
         run: npm run build
 
       - name: Upload Artifact
-        uses: actions/upload-pages-artifact@v2  # ✅ FIXED: Using the latest version
+        uses: actions/upload-pages-artifact@v4  # ✅ FIXED: Using the latest version
         with:
           path: Milestone-3/Module-15-biker-zone/dist/  # Your build path
 
