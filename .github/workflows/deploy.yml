@@ -3,7 +3,7 @@ name: Deploy Vite Site
 on:
   push:
     branches:
-      - main  # Change this if using a different branch
+      - main  # Change if using a different branch
 
 permissions:
   contents: read
@@ -29,7 +29,7 @@ jobs:
         run: npm run build
 
       - name: Upload Artifact
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v2  # ✅ FIXED: Using the latest version
         with:
           path: Milestone-3/Module-15-biker-zone/dist/  # Your build path
 
