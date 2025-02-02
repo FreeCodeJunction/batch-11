@@ -23,6 +23,14 @@
       .regular-button {
         @apply text-white sm:text-xl text-lg font-bold sm:py-[18px] py-3 sm:px-5 px-5 rounded-lg;
       }
+
+      .regular-heading {
+        @apply sm:text-5xl text-3xl text-center font-extrabold text-dark-one;
+      }
+
+      .regular-para {
+        @apply leading-7 font-medium text-dark-three sm:text-base text-sm text-center sm:max-w-6/8 max-w-9/10 mx-auto;
+      }
     </style>
   </head>
   <body>
@@ -89,6 +97,80 @@
           </div>
         </div>
       </header>
+
+      <!-- ! Featured Product section -->
+      <section class="max-inline">
+        <h1 class="regular-heading">Our Featured Products</h1>
+        <p class="regular-para sm:mt-5 sm:mb-12 mt-4 mb-10">
+          There are many variations of passages of Lorem Ipsum available, but
+          the majority have suffered alteration in some form, by injected
+          humour, or randomised words which don't look even slightly believable.
+        </p>
+        <!-- Featured products container -->
+        <div class="grid grid-cols-1 sm:grid-cols-4 gap-6">
+          <!-- first item -->
+          <div
+            class="p-7 bg-gradient-to-b from-[#F4F4F4] to-[rgba(244, 244, 244, 0)] rounded-lg"
+          >
+            <div>
+              <img class="mx-auto" src="images/tea-1.png" alt="product-image" />
+            </div>
+            <h4
+              class="mb-3 mt-7 text-2xl text-center font-extrabold text-dark-one"
+            >
+              Milk Tea
+            </h4>
+            <p class="font-semibold text-dark-three text-center">
+              Creamer could be replaced by fresh milk
+            </p>
+          </div>
+          <div
+            class="p-7 bg-gradient-to-b from-[#F4F4F4] to-[rgba(244, 244, 244, 0)] rounded-lg"
+          >
+            <div>
+              <img src="images/tea-2.png" class="mx-auto" alt="product-image" />
+            </div>
+            <h4
+              class="mb-3 mt-7 text-2xl text-center font-extrabold text-dark-one"
+            >
+              Black Tea
+            </h4>
+            <p class="font-semibold text-dark-three text-center">
+              Creamer could be replaced by fresh milk
+            </p>
+          </div>
+          <div
+            class="p-7 bg-gradient-to-b from-[#F4F4F4] to-[rgba(244, 244, 244, 0)] rounded-lg"
+          >
+            <div>
+              <img class="mx-auto" src="images/tea-3.png" alt="product-image" />
+            </div>
+            <h4
+              class="mb-3 mt-7 text-2xl text-center font-extrabold text-dark-one"
+            >
+              Lemon Tea
+            </h4>
+            <p class="font-semibold text-dark-three text-center">
+              Creamer could be replaced by fresh milk
+            </p>
+          </div>
+          <div
+            class="p-7 bg-gradient-to-b from-[#F4F4F4] to-[rgba(244, 244, 244, 0)] rounded-lg"
+          >
+            <div>
+              <img class="mx-auto" src="images/tea-4.png" alt="product-image" />
+            </div>
+            <h4
+              class="mb-3 mt-7 text-2xl text-center font-extrabold text-dark-one"
+            >
+              Green Tea
+            </h4>
+            <p class="font-semibold text-dark-three text-center">
+              Creamer could be replaced by fresh milk
+            </p>
+          </div>
+        </div>
+      </section>
     </div>
   </body>
 </html>
