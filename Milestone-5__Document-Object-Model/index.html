@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Challenge Three</title>
+  </head>
+  <body>
+    <button id="add">Add new Li</button>
+    <ul id="list-container">
+      <li class="list-item">click me 1</li>
+      <li class="list-item">click me 2</li>
+      <li class="list-item">click me 3</li>
+      <li class="list-item">click me 4</li>
+      <li class="list-item">click me 5</li>
+    </ul>
+
+    <script>
+      let listContainer = document.getElementById("list-container");
+      listContainer.addEventListener("click", function (event) {
+        if (event.target.classList.contains("list-item")) {
+          console.log(event.target.innerText);
+        }
+      });
+
+      let count = 6;
+
+      document.getElementById("add").addEventListener("click", function () {
+        const li = document.createElement("li");
+        li.classList.add("list-item");
+        li.innerText = `click me ${count++}`;
+        listContainer.appendChild(li);
+      });
+    </script>
+  </body>
+</html>

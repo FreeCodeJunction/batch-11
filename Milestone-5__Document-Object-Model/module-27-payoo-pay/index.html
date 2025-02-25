@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payoo pay</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.8/daisyui.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-slate-100">
+    <main class="max-w-md mx-auto h-screen flex flex-col justify-center">
+      <!-- image div -->
+      <section class="grid place-items-center">
+        <img
+          src="assets/rectangle-main.png"
+          alt=""
+          class="col-span-full row-span-full"
+        />
+        <img
+          src="assets/Group.png"
+          alt=""
+          class="col-span-full row-span-full"
+        />
+      </section>
+
+      <!-- login form  -->
+      <div class="hero">
+        <div
+          class="hero-content max-w-full w-full py-0 px-6 flex-col lg:flex-row-reverse"
+        >
+          <div class="card w-full shrink-0 shadow-2xl">
+            <div class="card-body">
+              <fieldset class="fieldset">
+                <label class="fieldset-label font-medium text-base text-black"
+                  >Mobile Number</label
+                >
+                <input
+                  id="account-number"
+                  type="number"
+                  class="input rounded-full py-6 px-5 text-base bg-[#F4F5F7] border-none"
+                  placeholder="Enter your number"
+                  required
+                  value="12345678901"
+                />
+                <label class="fieldset-label font-medium text-base text-black"
+                  >4 Digit Pin</label
+                >
+                <input
+                  id="account-pin"
+                  type="number"
+                  class="input rounded-full py-6 px-5 text-base bg-[#F4F5F7] border-none"
+                  placeholder="Pin"
+                  required
+                  value="1234"
+                />
+
+                <button
+                  id="login-btn"
+                  class="btn btn-neutral font-semibold text-xl py-7 rounded-full bg-[#0874F2] mt-4 border-none"
+                >
+                  Login
+                </button>
+              </fieldset>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
