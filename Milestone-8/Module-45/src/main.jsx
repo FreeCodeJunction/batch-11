@@ -8,6 +8,10 @@ import About from "./components/About.jsx";
 import Laptops from "./components/Laptops.jsx";
 import Contacts from "./components/Contacts.jsx";
 import Users, { usersLoader } from "./components/Users.jsx";
+import User from "./components/User.jsx";
+import SingleUser, { userLoader } from "./components/SingleUser.jsx";
+import Products, { productsLoader } from "./components/Products.jsx";
+import ErrorElement from "./components/ErrorElement.jsx";
 
 const router = createBrowserRouter([
   {
@@ -23,8 +27,16 @@ const router = createBrowserRouter([
         Component: Users,
         loader: usersLoader,
       },
+      { path: "user/:id", Component: SingleUser, loader: userLoader },
+      {
+        path: "products",
+        Component: Products,
+        loader: productsLoader,
+        errorElement: <ErrorElement />,
+      },
     ],
   },
+  { path: "*", element: <h1>404 Not found</h1> },
 ]);
 
 createRoot(document.getElementById("root")).render(

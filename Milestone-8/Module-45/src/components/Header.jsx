@@ -3,7 +3,7 @@ import { NavLink } from "react-router";
 
 export default function Header() {
   return (
-    <div>
+    <div className="mb-10">
       <ul className="flex justify-center items-center py-10 bg-red-300 rounded-md gap-10">
         <li>
           <NavLink
@@ -63,6 +63,18 @@ export default function Header() {
             to="/users"
           >
             Users
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            className={({ isActive }) =>
+              `${
+                isActive ? "bg-yellow-400" : "bg-gray-800"
+              } text-white text-xl py-2 px-3 rounded-lg hover:bg-black active:bg-red-500`
+            }
+            to="/products"
+          >
+            Products
           </NavLink>
         </li>
       </ul>
