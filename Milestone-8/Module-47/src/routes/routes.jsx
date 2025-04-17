@@ -1,7 +1,10 @@
 import { createBrowserRouter } from "react-router";
 import Layout from "../Layout";
 import ErrorPage from "../components/ErrorPage/ErrorPage";
-import Home from "../components/Home/Home";
+import Home, { homeLoader } from "../components/Home/Home";
+import ListedBooks, {
+  listedBooksLoader,
+} from "../components/ListedBooks/ListedBooks";
 
 const router = createBrowserRouter([
   {
@@ -12,6 +15,12 @@ const router = createBrowserRouter([
       {
         index: true,
         Component: Home,
+        loader: homeLoader,
+      },
+      {
+        path: "/listedBooks",
+        Component: ListedBooks,
+        loader: listedBooksLoader,
       },
     ],
   },
