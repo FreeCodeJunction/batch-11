@@ -1,27 +1,51 @@
+import { CircleX } from "lucide-react";
 import React from "react";
+import { NavLink } from "react-router";
 
-export default function Book({ book }) {
-  const { image, bookName, author, tags, category, rating } = book;
+export default function Book({ book, removeFromList }) {
+  const { image, bookName, author, tags, category, rating, bookId } = book;
   return (
-    <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
-      <a className="block relative h-60 rounded overflow-hidden">
+    <div className="max-w-[400px] w-full relative   sm:w-1/2 lg:w-1/3 xl:w-1/4 p-4 ">
+      {removeFromList && (
+        <CircleX
+          size={50}
+          className="absolute cursor-pointer top-0 right-0 z-10 bg-cyan-500 text-red-500 rounded-lg p-1 hover:bg-cyan-300 transition-colors"
+          onClick={() => removeFromList(bookId)}
+        />
+      )}
+
+      <NavLink
+        className="block relative h-60 rounded overflow-hidden hover:scale-105 transition-transform"
+        to={"/book/" + bookId}
+      >
         <img
-          alt="ecommerce"
+          alt={bookName}
           className="object-cover object-center w-full h-full block"
           src={image}
         />
-      </a>
+      </NavLink>
       <div className="mt-4">
-        <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">
-          {tags.length &&
-            tags.map((tag, index) => <span key={index}>{tag}</span>)}
-        </h3>
-        <h2 className="text-gray-900 title-font text-lg font-medium">
+        {tags.length && (
+          <h3 className="text-sm tracking-widest title-font mb-1 space-x-4">
+            {tags.map((tag, index) => (
+              <span
+                key={index}
+                className="text-green-500 font-semibold inline-block bg-green-50 py-1 px-2 rounded-sm"
+              >
+                {tag}
+              </span>
+            ))}
+          </h3>
+        )}
+
+        <h2 className="text-gray-900 title-font font-bold my-3 font-playfair text-2xl line-clamp-1 text-ellipsis">
           {bookName}
         </h2>
 
-        <p className="mt-1">By: {author}</p>
-        <p>
+        <p className="mt-1 font-medium pb-5 border-b border-dashed border-[rgba(19,19,19,0.15)]">
+          By: {author}
+        </p>
+        <p className="font-medium py-5 flex justify-between">
           <span>{category}</span> <span>{rating}</span>
         </p>
       </div>

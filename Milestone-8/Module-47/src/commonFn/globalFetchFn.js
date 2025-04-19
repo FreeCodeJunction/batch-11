@@ -1,13 +1,19 @@
 import axios from "axios";
 
-export default function globalFetchFn(url, config = {}) {
-  return new Promise((res) => setTimeout(res, 2000))
-    .then((_) => axios.get(url, config))
+export default function globalFetchFn(url, config = {}, delay = 500) {
+  return new Promise((res) => setTimeout(res, delay))
+    .then((_) => {
+      console.log("request processing");
+
+      return axios.get(url, config);
+    })
     .then((res) => {
-      console.log(res.data);
+      console.log("request processed ");
       return res.data;
     })
     .catch((err) => {
+      console.log("getting error");
+
       if (err.response) {
         throw new Response(null, {
           status: err.response.status,

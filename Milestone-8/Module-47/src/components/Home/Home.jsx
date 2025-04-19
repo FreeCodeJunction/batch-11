@@ -8,7 +8,7 @@ import ErrorPage from "../ErrorPage/ErrorPage";
 export function homeLoader({ request }) {
   const signal = request.signal;
   return {
-    homeData: globalFetchFn("booksData.json", { signal }),
+    homeData: globalFetchFn("/booksData.json", { signal }),
   };
 }
 
@@ -31,12 +31,13 @@ export default function Home() {
           ></Button>
         </div>
         <div className="md:rounded-xl rounded-md overflow-hidden max-w-[300px] sm:max-w-[300px] md:max-w-[350px] lg:max-w-[400px]">
-          <img src="/src/assets/books.jpg" alt="" />
+          <img src="/assets/books.jpg" alt="" />
         </div>
       </div>
+      <h1 className="font-bold text-5xl font-playfair  mt-25">Our Books</h1>
       <section className="text-gray-600 body-font">
         <div className="container px-5 py-24 mx-auto">
-          <div className="flex flex-wrap -m-4">
+          <div className="flex flex-wrap justify-center  sm:justify-start -m-4">
             <Suspense
               fallback={
                 <div className=" w-full @container">
