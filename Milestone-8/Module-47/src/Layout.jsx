@@ -5,7 +5,7 @@ import { ReadListProvider } from "./Contexts/ReadListContext.js";
 
 import useListFeature from "./features/readListAndWishList.js";
 import { WishListProvider } from "./Contexts/WishListContext.js";
-import { useEffect } from "react";
+import React from "react";
 
 export default function Layout() {
   const [readListIds, addIdsInTheReadList, removeIdsFromTheReadList] =

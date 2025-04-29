@@ -4,7 +4,6 @@ export default function useListFeature(key) {
   const [myState, setMyState] = useState(() => {
     return JSON.parse(localStorage.getItem(key)) || [];
   });
-  console.log(key + " hook created", myState);
 
   useEffect(() => {
     localStorage.setItem(key, JSON.stringify(myState));
@@ -12,7 +11,6 @@ export default function useListFeature(key) {
 
   const addInTheState = (id) => {
     if (myState.includes(id)) {
-      console.log(id + " is Already in the " + key);
       return;
     }
     setMyState((state) => [...state, id]);
@@ -20,7 +18,6 @@ export default function useListFeature(key) {
 
   const removeFromTheState = (id) => {
     if (!myState.includes(id)) {
-      console.log("It's not in the list");
       return;
     }
     setMyState((state) => [...state.filter((myId) => myId !== id)]);

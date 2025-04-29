@@ -8,7 +8,7 @@ export default function Book({ book, removeFromList }) {
     <div className="max-w-[400px] w-full relative   sm:w-1/2 lg:w-1/3 xl:w-1/4 p-4 ">
       {removeFromList && (
         <CircleX
-          size={50}
+          size={40}
           className="absolute cursor-pointer top-0 right-0 z-10 bg-cyan-500 text-red-500 rounded-lg p-1 hover:bg-cyan-300 transition-colors"
           onClick={() => removeFromList(bookId)}
         />

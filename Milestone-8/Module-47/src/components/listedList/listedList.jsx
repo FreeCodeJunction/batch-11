@@ -19,7 +19,12 @@ export default function ListedList({ books, listIds, removeFromList }) {
   return (
     <>
       {!listBooks.length ? (
-        <div>There are no books</div>
+        <div className="w-full  h-70 sm:h-100 grid place-items-center ">
+          <div className="text-4xl sm:text-5xl font-medium text-center px-4">
+            You did not add any books.
+            <span className="hidden sm:inline">It's empty</span>
+          </div>
+        </div>
       ) : (
         <>
           <div className="pl-5 mt-15 space-x-7 ">
@@ -38,7 +43,7 @@ export default function ListedList({ books, listIds, removeFromList }) {
             ))}
           </div>
           <section className="text-gray-600 body-font">
-            <div className="container px-5 py-10 mx-auto">
+            <div className="container px-5 pt-10 mx-auto">
               <div className="flex flex-wrap justify-center  sm:justify-start -m-4">
                 {listBooks.map((book) => (
                   <Book

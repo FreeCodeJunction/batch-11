@@ -41,26 +41,48 @@ const TriangleBar = (props) => {
 };
 
 const PagesToRead = () => {
-  const data = useLoaderData().slice(0, 9);
-  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  const books = useLoaderData().map((book) => ({
+    ...book,
+    bookName:
+      book.bookName.split(" ").length > 1
+        ? book.bookName.split(" ").slice(0, 2).join(" ") + " ..."
+        : book.bookName,
+  }));
+
+  const [slicingIndex, setSlicingIndex] = useState(books.length);
+  const data = books.slice(0, slicingIndex);
 
   useEffect(() => {
-    function handleResize(e) {
-      console.log(e);
+    function handleResize() {
+      if (window.innerWidth > 1280) {
+        setSlicingIndex(books.length);
+      } else if (window.innerWidth > 1023) {
+        setSlicingIndex(books.length - 2);
+      } else if (window.innerWidth > 767) {
+        setSlicingIndex(books.length - 4);
+      } else if (window.innerWidth > 639) {
+        setSlicingIndex(books.length - 5);
+      } else {
+        setSlicingIndex(books.length - 6);
+      }
     }
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
+    handleResize();
+    const resizeEventMethod = () => {
+      handleResize();
+    };
+    window.addEventListener("resize", resizeEventMethod);
+    return () => window.removeEventListener("resize", resizeEventMethod);
   }, []);
-  console.log(data);
+
   return (
-    <div className="w-full h-[100dvh]">
-      <ResponsiveContainer width="100%" height="80%">
+    <div className="w-full h-[50dvh] sm:h-[60dvh] lg:h-[70dvh] xl:h-[80dvh]">
+      <ResponsiveContainer width="100%" height="100%">
         <BarChart
           data={data}
           margin={{
             top: 0,
-            right: 0,
-            left: 0,
+            right: 10,
+            left: -20,
             bottom: 0,
           }}
         >
